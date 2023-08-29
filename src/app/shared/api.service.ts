@@ -31,7 +31,7 @@ getstudent(){
 //update
 
 updatestudent(data:any,id:number){
-  return this._http.put("http://localhost:3000/posts"+id,data)
+  return this._http.put("http://localhost:3000/posts/"+id,data)
   .pipe(map((res:any)=>{
     return res;
   }))

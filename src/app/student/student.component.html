@@ -122,8 +122,8 @@
       <div style="background: blue;" class="modal-footer">
 
         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-        <button *ngIf="showadd" type="button" (click)="addstudent()" [disabled]="formValue.invalid" class="btn btn-success">Add</button>
-        <button *ngIf="showupdate" type="button" (click)="update()" [disabled]="formValue.invalid" class="btn btn-success">Update</button>
+        <button *ngIf="showadd" (click)="addstudent()" [disabled]="formValue.invalid" type="button" class="btn btn-success">Add</button>
+        <button *ngIf="showupdate" (click)="update()" [disabled]="formValue.invalid" type="button" class="btn btn-success">Update</button>
 
       </div>
 

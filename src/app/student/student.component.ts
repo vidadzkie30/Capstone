@@ -11,7 +11,9 @@ import { studentdata } from './student.model';
 })
 
 export class StudentComponent implements OnInit {
+
 //hide
+
 showadd!: boolean;
 showupdate!: boolean;
 studentmodelobj:studentdata=new studentdata
@@ -54,6 +56,9 @@ edit(data:any) {
 //update on edit button
 
 update(){
+  this.showadd=false;
+  this.showupdate=true;
+
   this.studentmodelobj.name = this.formValue.value.name;
   this.studentmodelobj.email = this.formValue.value.email;
   this.studentmodelobj.mobile = this.formValue.value.mobile;
